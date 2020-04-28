@@ -2,7 +2,9 @@
 
 ---
 
-Basic Installation of openssh-server on Linux
+Basic Installation and Configuration of openssh-server on Linux (Ubuntu OS).
+This role offer some security features, configured in SSHD configuration file.
+By Default 
 
 *Main functions of the Role:*
 
