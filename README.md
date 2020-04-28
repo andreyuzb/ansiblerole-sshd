@@ -4,7 +4,7 @@
 
 Basic Installation and Configuration of openssh-server on Linux (Ubuntu OS).
 This role offer some security features, configured in SSHD configuration file.
-By Default 
+By Default, openssh deamon allow many things, that can be used by hackers.
 
 *Main functions of the Role:*
 
