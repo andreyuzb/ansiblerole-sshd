@@ -1,0 +1,15 @@
+---
+- name: Install sshd if it's not installed
+  apt: name="openssh-server" state=present
+
+- name: Create SSHD config file
+  template:
+    src: sshd_config.j2
+    dest: /etc/ssh/sshd_config
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+    - restart ssh
+
+

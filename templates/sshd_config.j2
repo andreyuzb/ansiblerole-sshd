@@ -1,0 +1,11 @@
+Port {{ sshd_port }}
+ListenAddress {{ sshd_address }}
+PermitRootLogin no
+ChallengeResponseAuthentication no
+UsePAM yes
+X11Forwarding no
+PrintMotd no
+AllowTcpForwarding {{ sshd_allow_forwarding }}
+AcceptEnv LANG LC_*
+Subsystem       sftp    /usr/lib/openssh/sftp-server
+AllowUsers      {{ sshd_users }}
